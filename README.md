@@ -15,7 +15,7 @@ import (
 )
 
 func main() {
-    gosalsa.CryptFile("sound/magma/bgm_whipped_cream.mid")
+    err := gosalsa.CryptFile("sound/magma/bgm_whipped_cream.mid")
     if err != nil {
         fmt.Println(err.Error())
     } else {
